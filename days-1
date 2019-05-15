@@ -1,1 +1,6 @@
+#来一个Holle World
 print("Holle world");
+#输入一个加法
+print(5+3);
+#字符串之间的相加
+print("123"+"abc");
