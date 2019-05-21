@@ -1,0 +1,64 @@
+#常用的操作符
+# + - * /  % ** //
+a = b = c = d = 10
+a += 1
+b -= 3
+c *= 10
+d /= 8
+print(a, b, c, d)
+#地板除
+e = 3 // 2
+f = 3.0 // 2
+print(e, f)
+#求余
+g = 5 % 2
+h = 4 % 2
+print(g, h)
+
+#优先级
+i = -3 * 2 + 5 / -2 - 4
+#相等
+j = (-3) * 2 + 5 / (-2) - 4
+print(i, j)
+#幂运算的运算优先级
+k = -3 ** 2
+l = 3 ** -2
+print(k, l)
+
+#比较运算符
+#< <= > >= == !=
+#逻辑运算符
+# and or not
+#not(是一个一元操作符，他的作用是取操作数的相反值)
+
+#操作符的优先级为
+# 幂运算 》 正负号 》 算术运算符 》 比较操作符 》 逻辑运算符
+
+#了不起的分支
+#分支和循环
+score = int(input("请输入一个分数："))
+if 100 >= score >= 90:
+    print("A")
+if 90 > score >= 80:
+    print("B")
+if 80 > score >= 60:
+    print("C")
+if 60 > score >= 0:
+    print("B")
+if score < 0 or score > 100:
+    print("输入数字错误！")
+#替换使用elif
+if 100 >= score >= 90:
+    print("A")
+elif 90 > score >= 80:
+    print("B")
+elif 80 > score >= 60:
+    print("C")
+elif 60 > score >= 0:
+    print("D")
+else:
+    print("输入错误数字！")
+    
+#else悬挂问题，主要是因为代码不正常对其导致的，所以Python的代码一定要工整书写一定要规范
+
+#条件表达式三元操作符
